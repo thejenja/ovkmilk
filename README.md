@@ -1,5 +1,5 @@
 # OpenVK Milk
-Тема для OpenVK, основанная на OpenVK Modern
+Тема для OpenVK, основанная на [OpenVK Modern](https://github.com/openvk/openvk/tree/master/themepacks/openvk_modern)
 
 Доступно в Stylus: https://userstyles.world/style/4005/openvk-milk
 ## Примечания
