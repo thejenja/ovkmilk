@@ -276,3 +276,10 @@ body > div.layout > div.page_body > div.wrap2 > div > div > div.container_gray >
 .small-textarea {
     height: 30px;
 }
+input[type=checkbox], input[type=radio] {
+    -webkit-appearance: auto;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    height: auto;
+    width: auto;
+}
