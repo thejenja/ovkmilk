@@ -273,3 +273,6 @@ input[type="search"]{
 body > div.layout > div.page_body > div.wrap2 > div > div > div.container_gray > div > table > tbody > tr > td[valign="top"]{
     vertical-align: middle;
 }
+.small-textarea {
+    height: 30px;
+}
