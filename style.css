@@ -291,3 +291,6 @@ input[type=checkbox], input[type=radio] {
     background-color: #FFF;
     border: 0;
 }
+input[type=date]{
+    width: 90%;
+}
