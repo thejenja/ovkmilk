@@ -1,7 +1,7 @@
 # OpenVK Milk
 Тема для OpenVK, основанная на OpenVK Modern
 
-Доступно в Stylus: *нету*
+Доступно в Stylus: https://userstyles.world/style/4005/openvk-milk
 ## Примечания
 - Применяйте с темой **OpenVK (по умолчанию)**
 ## Как установить?
