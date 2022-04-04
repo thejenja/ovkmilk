@@ -294,3 +294,6 @@ input[type=checkbox], input[type=radio] {
 input[type=date]{
     width: 90%;
 }
+table td[width="120"] {
+    vertical-align: middle;
+}
