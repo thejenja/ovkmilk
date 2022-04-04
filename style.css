@@ -158,7 +158,9 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
-input[type="text"], input[type="password"], input[type~="text"], input[type~="password"], input[type="email"], input[type="phone"], input[type~="email"], input[type~="phone"], input[type="search"], input[type~="search"], select, textarea {
+input[type="text"], input[type="password"], input[type~="text"], input[type~="password"], input[type="email"], input[type="phone"], input[type~="email"], input[type~="phone"], input[type="search"], input[type~="search"], select, input[type="date"], textarea{
+    width: 100%;
+    border: 1px solid #C0CAD5;
     border-radius: 25px;
     padding: 6px 10px !important;
 }
@@ -296,4 +298,19 @@ input[type=date]{
 }
 table td[width="120"] {
     vertical-align: middle;
+}
+.ovk-video>.preview, .video-preview {
+    box-shadow: none;
+}
+.navigation .link {
+    padding: 5px 3px 5px 10px;
+}
+.page_header {
+    z-index: 1;
+}
+.ovk-diag-cont {
+    background: none;
+}
+.ovk-diag {
+    border: 0px;
 }
