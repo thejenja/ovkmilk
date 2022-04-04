@@ -286,3 +286,8 @@ input[type=checkbox], input[type=radio] {
 .action_links>.profile_link, .action_links>.profile_link_form>.profile_link {
     width: 150px !important;
 }
+.commentsTextFieldWrap {
+    padding: 0;
+    background-color: #FFF;
+    border: 0;
+}
