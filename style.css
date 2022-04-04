@@ -283,3 +283,6 @@ input[type=checkbox], input[type=radio] {
     height: auto;
     width: auto;
 }
+.action_links>.profile_link, .action_links>.profile_link_form>.profile_link {
+    width: 150px !important;
+}
