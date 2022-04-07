@@ -286,7 +286,7 @@ input[type=checkbox], input[type=radio] {
     width: auto;
 }
 .action_links>.profile_link, .action_links>.profile_link_form>.profile_link {
-    width: 150px !important;
+    width: 155px !important;
 }
 .commentsTextFieldWrap {
     padding: 0;
@@ -313,4 +313,15 @@ table td[width="120"] {
 }
 .ovk-diag {
     border: 0px;
+}
+.msg {
+    width: 70%;
+    padding: 8pt 10pt;
+    border-radius: 50px;
+}
+.vouncher_input{
+    width: 65px !important;
+}
+.action_links > .profile_link, .action_links > .profile_link_form > .profile_link {
+    text-transform: none;
 }
