@@ -144,21 +144,11 @@ body {
 .written {
     background: url("/themepack/openvk_modern/0.0.1.0/resource/4.png") no-repeat 0px 1px
 }
-.button {
+.button, .button_search {
     border-radius: 25px;
-    border: #595959;
-    font-size: 11px;
-    outline: none;
-    white-space: nowrap;
-    background: #595959;
-    background-position: 0px -16px;
-    color: #fff;
     padding: 6px 10px !important;
-    text-shadow: 0 1px 0 #686868;
-    cursor: pointer;
-    text-decoration: none;
 }
-input[type="text"], input[type="password"], input[type~="text"], input[type~="password"], input[type="email"], input[type="phone"], input[type~="email"], input[type~="phone"], input[type="search"], input[type~="search"], select, input[type="date"], textarea{
+input[type="text"], input[type="password"], input[type~="text"], input[type~="password"], input[type="email"], input[type="phone"], input[type~="email"], input[type~="phone"], input[type="search"], input[type~="search"], select, input[type="date"], textarea, .header_search_input{
     width: 100%;
     border: 1px solid #C0CAD5;
     border-radius: 25px;
@@ -324,4 +314,50 @@ table td[width="120"] {
 }
 .action_links > .profile_link, .action_links > .profile_link_form > .profile_link {
     text-transform: none;
+}
+.header_navigation .link a:hover {
+    text-decoration: none;
+}
+.navigation_footer .link {
+    border-radius: 25px;
+    border-top: 0;
+}
+.paginator a {
+    border-radius: 25px;
+    border-top: 0;
+    padding: 5px 8px;
+}
+.paginator a:hover {
+    border-top: 0;
+    background-color: rgb(230, 230, 230);
+}
+
+.paginator a.active {
+    border-top: 0;
+    background-color: rgb(130, 130, 130);
+    font-weight: bold;
+    color: #fff;
+}
+.button_search {
+    width: auto;
+}
+.header_search_input {
+    padding-left: 25px !important;
+    background: #fff url(/assets/packages/static/openvk/img/search_icon.png) no-repeat;
+    background-position-x: 7px;
+    background-position-y: 7px;
+}
+.expand_button {
+    border-radius: 25px;
+    line-height: 30px;
+    margin: 0 0 5px 0;
+}
+.post-share-button, .post-like-button {
+    display: flex;
+    padding: 5px;
+    border-radius: 25px;
+    transition-duration: .5s;
+}
+.post-menu > div > a, .post-menu > a {
+    border-radius: 25px;
 }
