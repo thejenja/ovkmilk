@@ -102,7 +102,7 @@ input[type="text"], input[type="password"], input[type ="text"], input[type ="pa
     width: 100% !important; }
 .left_small_block > br { display: none; }
 .profile-hints a { margin-bottom: 15px; }
-.page_body, .ovk-diag-cont, #wallAttachmentMenu { opacity: 0;
+.page_body, .ovk-diag-cont { opacity: 0;
     transition: 1s;
     animation: show 1s 1;
     animation-fill-mode: forwards;
