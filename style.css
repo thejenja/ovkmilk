@@ -198,3 +198,17 @@ h4 { border-bottom: 0; }
     border-radius: 15px; }
 #wallAttachmentMenu, #wallAttachmentMenu > a { padding: 5px;
     border-radius: 15px; }
+.ovk-diag-head {
+    font-weight: normal;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 0;
+    border-radius: 25px 25px 0px 0px;
+}
+.ovk-diag-action {
+    border-radius: 0px 0px 25px 25px;
+}
+.expanded-textarea {
+    border-radius: 15px;
+    min-height: 48px;
+}
