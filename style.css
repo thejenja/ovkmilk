@@ -5,13 +5,15 @@ body { background: url("/themepack/openvk_modern/0.0.1.0/resource/1.png") repeat
     height: 42px;
     background: #3C3C3C;
     z-index: 1000 }
-.home_button { background: url("/themepack/openvk_modern/0.0.1.0/resource/2.png") no-repeat;
+.home_button { background: #3C3C3C url("/themepack/openvk_modern/0.0.1.0/resource/2.png") no-repeat;
+	background-size: 80%;
     background-position-y: 0px;
-    background-position-x: 1px }
-.home_button_custom { background: url("/themepack/openvk_modern/0.0.1.0/resource/5.png") no-repeat;
+    background-position-x: 2px; }
+.home_button_custom { background: #3C3C3C url("/themepack/openvk_modern/0.0.1.0/resource/5.png") no-repeat;
     background-position-y: 0px;
-    background-position-x: 1px;
-    text-shadow: none }
+    background-position-x: 2px;
+    text-shadow: none;
+    width: 150px}
 .header_navigation .link { background: unset }
 .sidebar { margin-top: 47px;
     position: fixed }
@@ -31,7 +33,7 @@ body { background: url("/themepack/openvk_modern/0.0.1.0/resource/1.png") repeat
 .msg { border: 1pt solid #e6f2f3 }
 .msg.msg_succ { border-color: #ddf3d7 }
 .msg.msg_err { border-color: #f5e9ec }
-.navigation .link:hover { border-top: 1px solid #E4E4E4 }
+.navigation .link:hover { border-top: 1px solid #E4E4E4}
 #profile_link, .profile_link { border-bottom: 1px solid transparent }
 .completeness-gauge-gold { border: 1px solid #f6ebbb }
 .post-author { border-top: #fff solid 1px;
@@ -65,9 +67,8 @@ body { background: url("/themepack/openvk_modern/0.0.1.0/resource/1.png") repeat
 #faqhead { border: 1px solid #FBF3C3 }
 #faqcontent { border: 1px solid #FAFAFA }
 .psa-poster { border: 5px solid #F3F3F3 }
-.written { background: url("/themepack/openvk_modern/0.0.1.0/resource/4.png") no-repeat 0px 1px }
 .button, .button_search { border-radius: 25px;
-    padding: 6px 10px !important; }
+    padding: 7px 12px !important; }
 input[type="text"], input[type="password"], input[type ="text"], input[type ="password"], input[type="email"], input[type="phone"], input[type ="email"], input[type ="phone"], input[type="search"], input[type ="search"], select, input[type="date"], textarea, .header_search_input { width: 100%;
     border: 1px solid #C0CAD5;
     border-radius: 25px;
@@ -211,4 +212,20 @@ h4 { border-bottom: 0; }
 .expanded-textarea {
     border-radius: 15px;
     min-height: 48px;
+}
+#wallAttachmentMenu {
+    margin-top: -12px;
+    margin-left: -21px;
+}
+.completeness-gauge {
+    border-radius: 25px;
+    width: 198px;
+    height: 28px;
+    margin-bottom: 10px;
+}
+div.profile-hints > div > div{
+    border-radius: 25px 0px 0px 25px;
+}
+.ovk-diag {
+    border-radius: 25px;
 }
