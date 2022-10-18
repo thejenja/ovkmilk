@@ -270,3 +270,15 @@ height: 9px}
     height: 100px;
     box-shadow: none;}
 .preview > img{max-height: 100px !important;}
+.note_header {
+    background: #f7f7f7;
+    border-bottom: solid 1px #DAE1E8;
+    border-top: solid 1px #45688E;
+    padding: 10px 10px 11px;
+}
+.summaryBar {
+    border-bottom: 0;
+}
+.poll {
+    border: 0;
+}
