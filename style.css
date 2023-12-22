@@ -1,6 +1,16 @@
 @import url('https://rsms.me/inter/inter.css');
 * { font-family: 'Inter' !important; }
 body { background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAqAQMAAABMRXMCAAAAAXNSR0IB2cksfwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAANQTFRFMzMzyuxiNQAAAAxJREFUeJxjYKA+AAAAVAABk+fDOAAAAABJRU5ErkJggg==') repeat-x fixed }
+#backdrop:before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 42px;
+    width: 100%;
+    background-color: #333;
+}
 .page_header { position: fixed;
     height: 42px;
     background: #333;
@@ -21,11 +31,11 @@ body { background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAqAQ
 .page_body { margin-top: 42px }
 .toTop { margin-top: 42px }
 .content_title_expanded { cursor: pointer;
-    background-image: unset;
+    background-image: none !important;
     padding: 3px 10px;
     border-top: #e6e6e6 solid 1px }
-.content_title_unexpanded { border-radius: 15px;
-    background-image: unset;
+.content_title_unexpanded { border-radius: 10px;
+    background-image: none !important;
     padding: 3px 10px;
     border-top: #eee solid 1px }
 .content_subtitle { border-top: #F0F0F0 solid 1px;
@@ -68,16 +78,16 @@ body { background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAqAQ
 #faqhead { border: 1px solid #FBF3C3 }
 #faqcontent { border: 1px solid #FAFAFA }
 .psa-poster { border: 5px solid #F3F3F3 }
-.button, .button_search { border-radius: 25px;
+.button, .button_search { border-radius: 10px;
     padding: 7px 12px !important; }
 input[type="text"], input[type="password"], input[type ="text"], input[type ="password"], input[type="email"], input[type="phone"], input[type ="email"], input[type ="phone"], input[type="search"], input[type ="search"], select, input[type="date"], textarea, .header_search_input { width: 100%;
     border: 1px solid #C0CAD5;
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 6px 10px !important; }
 .tab {   display: inline-block;
-    padding: 5px 10px;
+    padding: 8px 15px;
     margin-right: 3px;
-    border-radius: 25px; }
+    border-radius: 10px; }
 .tabs { border-bottom: 0px;
     padding: 5px 0; }
 .page-wrap, .page_wrap { border-bottom: 0px;
@@ -85,13 +95,13 @@ input[type="text"], input[type="password"], input[type ="text"], input[type ="pa
     border-right: 0px;
     padding: 1px 10px 10px 10px !important; }
 .content_list .cl_element .cl_name .cl_lname { display: none; }
-.content_title_expanded { border-radius: 15px 15px 0 0; }
-.content_subtitle { border-radius: 0 0 15px 15px; }
-.navigation .link { border-radius: 25px; }
+.content_title_expanded { border-radius: 10px 10px 0 0; }
+.content_subtitle { border-radius: 0 0 10px 10px; }
+.navigation .link { border-radius: 10px; }
 .navigation .edit-button { display: none; }
 .wrap1 { border: 0; }
 .wrap2 { border-right: 0; }
-.postFeedWrapper { border-radius: 25px;
+.postFeedWrapper { border-radius: 10px;
     padding: 0;
     background-color: #fff;
     border: 0; }
@@ -100,7 +110,7 @@ input[type="text"], input[type="password"], input[type ="text"], input[type ="pa
     margin-bottom: 10px;
     text-align: center;
     background: #e6e6e6;
-    border-radius: 25px;
+    border-radius: 10px;
     width: 100% !important;
     font-weight: bold;}
 .left_small_block > br { display: none; }
@@ -121,16 +131,16 @@ input[type="search"] { padding-left: 18px !important; }
 .mb_tabs { background-color: #F6F6F6;
     border-bottom: 0px;
     padding: 5px;
-    border-radius: 25px; }
+    border-radius: 10px; }
 .mb_tab { cursor: pointer;
     font-weight: bold;
     margin-right: 10px;
     display: inline-block;
-    border-radius: 25px; }
+    border-radius: 10px; }
 .mb_tab div { padding: 5px 10px;
-    border-radius: 25px; }
+    border-radius: 10px; }
 .mb_tab#active div { border: 0px; }
-.container_gray .content { border-radius: 15px;
+.container_gray .content { border-radius: 10px;
     background: #ededed;
     padding: 5px;
     border: 0;
@@ -159,9 +169,9 @@ table td[width="120"] { vertical-align: middle; }
 .vouncher_input { width: 65px !important; }
 .action_links > .profile_link, .action_links > .profile_link_form > .profile_link { text-transform: none; }
 .header_navigation .link a:hover { text-decoration: none; }
-.navigation_footer .link { border-radius: 25px;
+.navigation_footer .link { border-radius: 10px;
     border-top: 0; }
-.paginator a { border-radius: 25px;
+.paginator a { border-radius: 10px;
     border-top: 0;
     padding: 5px 8px; }
 .paginator a:hover { border-top: 0;
@@ -175,50 +185,50 @@ table td[width="120"] { vertical-align: middle; }
     background: #fff url(/assets/packages/static/openvk/img/search_icon.png) no-repeat;
     background-position-x: 7px;
     background-position-y: 7px; }
-.expand_button { border-radius: 25px;
+.expand_button { border-radius: 10px;
     line-height: 30px;
     margin: 0 0 5px 0; }
 .post-share-button, .post-like-button { padding: 5px;
-    border-radius: 25px;
+    border-radius: 10px;
     transition-duration: .5s; }
-.post-menu > div > a, .post-menu > a { border-radius: 25px; }
+.post-menu > div > a, .post-menu > a { border-radius: 10px; }
 #auth > div > div.left_small_block > div:nth-child(7) > div:nth-child(2) > div:nth-child(2) { padding: 5px 8px 0 8px !important; }
 #auth > div > div.left_small_block > div:nth-child(8) > div:nth-child(2) > div:nth-child(2) { padding: 5px 8px 0 8px !important; }
 #status_editor > form > button { height: auto !important;
     width: auto !important; }
-.page_status_popup { border-radius: 15px; }
+.page_status_popup { border-radius: 10px; }
 body > div.layout > div.page_body > div.wrap2 > div > div > div.container_gray > center { border: 0 !important; }
 #auth > div > hr { border: 0 !important; }
 h4 { border-bottom: 0; }
 .psa-poster { margin-top: 10px !important;
-    border-radius: 15px; }
+    border-radius: 10px; }
 #votesBalance { margin-top: 10px;
     padding: 10px;
     border-bottom: 0;
-    border-radius: 15px; }
+    border-radius: 10px; }
 #wallAttachmentMenu, #wallAttachmentMenu > a { padding: 5px;
-    border-radius: 15px; }
+    border-radius: 10px; }
 .ovk-diag-head {
     background-color: #333;
     font-weight: normal;
     text-align: center;
     padding: 10px;
     border-bottom: 0;
-    border-radius: 15px 15px 0px 0px;}
-.ovk-diag-action {border-radius: 0px 0px 15px 15px;}
+    border-radius: 10px 10px 0px 0px;}
+.ovk-diag-action {border-radius: 0px 0px 10px 10px;}
 .expanded-textarea {
-    border-radius: 15px;
+    border-radius: 10px;
     min-height: 48px;}
 #wallAttachmentMenu {
     margin-top: -12px;
     margin-left: -21px;}
 .completeness-gauge {
-    border-radius: 25px;
+    border-radius: 10px;
     width: 198px;
     height: 28px;
     margin-bottom: 10px;}
-div.profile-hints > div > div{border-radius: 25px 0px 0px 25px;}
-.ovk-diag {border-radius: 25px;}
+div.profile-hints > div > div{border-radius: 10px 0px 0px 25px;}
+.ovk-diag {border-radius: 10px;}
 .floating_sidebar {
     position: fixed;
     top: 50px;}
@@ -231,7 +241,7 @@ div.profile-hints > div > div{border-radius: 25px 0px 0px 25px;}
     color: #fff;
     position: absolute;
     margin-top: -10px;
-    border-radius: 25px;}
+    border-radius: 10px;}
 input[type="search"], input[type ="search"]{
     height: 25px !important;
     background: #fff url(/assets/packages/static/openvk/img/search_icon.png) no-repeat 5px 6px !important;
@@ -243,18 +253,18 @@ input[type="search"], input[type ="search"]{
     margin-left: 8px;
     margin-bottom: 8px;
     padding: 7px 12px;
-    border-radius: 25px;}
+    border-radius: 10px;}
 #activetabs, .paginator a.active, .button{background: #333}
 .likeCnt{font-weight: bold;}
 .profileName h2 {
     color: #333;
     font-size: 16px;}
 h4, a{color: #333;}
-.messenger-app--input---messagebox textarea {border-radius: 15px;}
+.messenger-app--input---messagebox textarea {border-radius: 10px;}
 table td[width="120"] {width: 130px}
 body.dimmed > .dimmer {opacity: .5 !important;}
 .floating_sidebar .minilink:hover {
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: #E4E4E4;}
 .floating_sidebar .minilink {padding: 8px 4px;
     width: 25px;
@@ -281,4 +291,8 @@ height: 9px}
 }
 .poll {
     border: 0;
+}
+.audioEntry{
+    border-radius: 10px !important;
+    transition: .5s
 }
